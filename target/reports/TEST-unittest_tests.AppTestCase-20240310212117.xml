@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="unittest_tests.AppTestCase-20240310212117" tests="1" file="unittest_tests.py" time="0.007" timestamp="2024-03-10T21:21:18" failures="1" errors="0" skipped="0">
+	<testcase classname="unittest_tests.AppTestCase" name="test_hello_world" time="0.007" timestamp="2024-03-10T21:21:18">
+		<failure type="AssertionError" message="'Hi, World!' != 'Hello, World!'
+- Hi, World!
+?  ^
++ Hello, World!
+?  ^^^^
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/swa3224/Documents/pyb/src/unittest/python/unittest_tests.py", line 14, in test_hello_world
+    self.assertEqual(response.data.decode('utf-8'), 'Hello, World!')
+    ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 885, in assertEqual
+    assertion_func(first, second, msg=msg)
+    ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 1251, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+    ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 715, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^^^
+AssertionError: 'Hi, World!' != 'Hello, World!'
+- Hi, World!
+?  ^
++ Hello, World!
+?  ^^^^
+
+]]></failure>
+	</testcase>
+</testsuite>
